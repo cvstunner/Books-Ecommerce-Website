@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE-11"/>
+	<meta hhtp-equiv="Cache-Controller" content="no-cache"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Books | Account</title>
+	<link rel="stylesheet" href="css/fonts.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+	<link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/admin.css"/>
+</head>
+<body>
+	<header class="header-bg">
+		<div class="logo-wrapper">
+			<a href="index.html" class="logo-wrpr">
+				<div class="logo">
+					<div id="logo-upper-body"></div>
+					<div id="logo-lower-body">
+						<!-- <div id="logo-lower-tyre-1"></div> -->
+						<div class="logo-lower-tyre logo-lower-tyre-1"><h1>.</h1></div>
+						<div class="logo-lower-tyre logo-lower-tyre-2"><h1>.</h1></div>
+					</div>
+				</div>
+				<div class="logo-txt-wrpr">
+					<p>Books,</p>
+					<h6>that must Looks</h6>
+				</div>
+			</a>
+		</div>
+		<nav id="nav">
+			<div class="srch-bar">
+				<i class="srch-icon"></i>
+				<input id="hdr-srch-input" type="text" placeholder="Search for books, author and more..." class="black-f"/>
+			</div>
+			<ul>
+				<li>
+					<div id="catg-hdr-btn-wrpr" class="nav-elements-link black-f catg-hdr-btn-wrpr-hover">
+						<p>Categories</p>
+						<p id="catg_arrow_txt" class="hdr_arrow_txt">></p>
+						<div id="catg-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+						<ul id="catg-contxt-menu" class="hdr-contxt-menu">
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a id="sellbks-hdr-txt" class="nav-elements-link black-f"><div id="sellBks-logo-1"></div>Sell Books</a>
+				</li>
+				<li>
+					<a id="hdr-cart-txt" class="nav-elements-link black-f"><div id="cart-logo"></div>Cart</a>
+				</li>
+				<li class="login-hdr-btn-wrpr">
+					<button id="login-hdr-btn" class="nav-elements-link black-f">
+						<p id="login-hdr-btn-txt">Login</p>
+						<p class="hdr_arrow_txt" id="user-arrow-txt">></p>
+						<div id="user-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+						<ul id="user-contxt-menu" class="hdr-contxt-menu">
+							<li><a id='account-hdr-txt'>Account</a></li>
+							<li><a id='wishlist-hdr-txt'>Wishlist</a></li>
+							<li><a id='orders-hdr-txt'="">Orders</a></li>
+							<li><a id="logout-contxt-txt">Log Out</a></li>
+						</ul>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	
+	<main>
+		<section id="section-1">
+			<div class="trend-title"><p>#SetTrends</p></div>
+			<div class="tb1">
+				<div class="tb-head">
+					<ul>
+						<li id="tb-th1">Title</li>
+						<li id="tb-th2">Category</li>
+						<li id="tb-th3">Rating</li>
+						<li id="tb-th4">Price</li>
+						<li id="tb-th5">Actions</li>
+					</ul>
+				</div>
+				<div class="tb-body" id="tb1-body">
+					<!-- <ul>
+						<li class="tb-td1">Best In Spiritual</li>
+						<li class="tb-td2">Spiritual</li>
+						<li class="tb-td3">4.5★ - 4.7★</li>
+						<li class="tb-td4">₹799 - ₹2500</li>
+						<li class="tb-td5">
+							<button>delete</button>
+							<button>up</button>
+							<button>down</button>
+						</li>
+					</ul> -->
+				</div>
+			</div>
+
+			<div class="adv-det-wrpr">
+				<div class="adv-det">
+					<div>
+						<p>Title</p>
+						<input id="trend-title-input" type="text">
+					</div>
+					<div>
+						<p>Category</p>
+						<select name="" id="trend-bookCatg-input">
+							<option >All</option>
+							<option >Action</option>
+							<option >Advevture</option>
+							<option >Factual</option>
+							<option >Fiction</option>
+							<option >Horror</option>
+							<option >Joke</option>
+							<option >Life</option>
+							<option >Life Lessons</option>
+							<option >Love</option>
+							<option >Psychology</option>
+							<option >Romance</option>
+							<option >Spiritual</option>
+							<option >Stock Market</option>
+						</select>
+					</div>
+					<div>
+						<p>Rating</p>
+						<div>
+							<input id="trend-ratingFrom-input" type="text" placeholder="★">
+							<p>to</p>
+							<input id="trend-ratingTo-input" type="text" placeholder="★">
+						</div>
+				    </div>
+					<div>
+						<p>Price</p>
+						<div>
+							<input id="trend-priceFrom-input" type="text" placeholder="₹">
+							<p>to</p>
+							<input id="trend-priceTo-input" type="text" placeholder="₹">
+						</div>
+				    </div>
+				</div>
+				<div>
+					<button id="add-trend-btn">Add</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="js/header.js"></script>
+	<script src="js/admin.js"></script>
+</body>
+</html>

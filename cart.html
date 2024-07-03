@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Books | Cart</title>
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/buy.css">
+		<link rel="stylesheet" href="css/cart.css">
+	</head>
+	<body id="body">
+		<header class="header-bg">
+			<div class="logo-wrapper">
+				<a href="index.html" class="logo-wrpr">
+					<div class="logo">
+						<div id="logo-upper-body"></div>
+						<div id="logo-lower-body">
+							<!-- <div id="logo-lower-tyre-1"></div> -->
+							<div class="logo-lower-tyre logo-lower-tyre-1"><h1>.</h1></div>
+							<div class="logo-lower-tyre logo-lower-tyre-2"><h1>.</h1></div>
+						</div>
+					</div>
+					<div class="logo-txt-wrpr">
+						<p>Books,</p>
+						<h6>that must Looks</h6>
+					</div>
+				</a>
+			</div>
+			<nav id="nav">
+				<div class="srch-bar">
+					<i class="srch-icon"></i>
+					<input id="hdr-srch-input" type="text" placeholder="Search for books, author and more..." class="black-f"/>
+				</div>
+				<ul>
+					<li>
+						<div id="catg-hdr-btn-wrpr" class="nav-elements-link black-f catg-hdr-btn-wrpr-hover">
+							<p>Categories</p>
+							<p id="catg_arrow_txt" class="hdr_arrow_txt">></p>
+							<div id="catg-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+							<ul id="catg-contxt-menu" class="hdr-contxt-menu">
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a id="sellbks-hdr-txt" class="nav-elements-link black-f"><div id="sellBks-logo-1"></div>Sell Books</a>
+					</li>
+					<li>
+						<a id="hdr-cart-txt" class="nav-elements-link black-f"><div id="cart-logo"></div>Cart</a>
+					</li>
+					<li class="login-hdr-btn-wrpr">
+						<button id="login-hdr-btn" class="nav-elements-link black-f">
+							<p id="login-hdr-btn-txt">Login</p>
+							<p class="hdr_arrow_txt" id="user-arrow-txt">></p>
+							<div id="user-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+							<ul id="user-contxt-menu" class="hdr-contxt-menu">
+								<li><a id='account-hdr-txt'>Account</a></li>
+								<li><a id='wishlist-hdr-txt'>Wishlist</a></li>
+								<li><a id='orders-hdr-txt'="">Orders</a></li>
+								<li><a id="logout-contxt-txt">Log Out</a></li>
+							</ul>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="products">
+				<div class="pro-items-wrapper">
+					<div class="pro-frow"></div>
+				</div>
+			</section>
+		</main>
+		<div class="login-form-wrpr">
+			<form id="login-form" class="main-cont">	
+				<div id="login-close-wrapper">
+					<button id="login-close-btn" type="button" name="login-close-btn">X</button>
+				</div>
+				<div class="form-cont">
+					<div class="main-cont2">	
+						<div>
+							<h3>Delivery Address</h3>
+							<div class="sub-cont-2">
+								<p id="address-arrow-txt" class="hdr_arrow_txt buy_arrow_txt">></p>
+							</div>
+						</div>
+						<div id="address-shrink-output">
+							<p id="address-shrink-output-txt"></p>
+						</div>
+						<div class="sub-cont-1 upro-det pro-about-info">
+							<div>
+								<span>
+									<p>Name</p>
+									<input id="user-order-name-input" type="text" name="book-title-input" placeholder="Enter your name" required>
+									<hr>
+								</span>
+								<span>
+									<p>Contact</p>
+									<input id="user-order-contact-input" type="text" name="book-author-input" placeholder="Enter your contact" oninput="this.value = this.value.replace(/[^0-9]+/g, '').replace(/(\..*)\./g, '$1');" required>
+									<hr>
+								</span>
+							</div>
+							<div>
+								<span>
+									<p>Address</p>
+									<textarea id="user-order-address-input" type="text" name="book-dscp-input" placeholder="Enter the address"  rows="3"></textarea>
+								</span>
+							</div>
+							<div>
+								<span>
+									<p>City</p>
+									<input id="user-order-city-input" type="text" name="book-price-input" placeholder="Enter city name" required>
+									<hr>
+								</span>
+								<div>
+									<p>State</p>
+									<select name="" id="user-order-state-input">
+										<option value="">Andhra Pradesh</option>
+										<option value="">Assam</option>
+										<option value="">Bengal</option>
+										<option value="">Maharashtra</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<span>
+									<p>Pincode</p>
+									<input id="user-order-landmark-input" type="text" name="book-price-input" placeholder="Enter landmark" required>
+									<hr>
+								</span>
+								<span class="deliver-here-cont">
+									<button id="deliver-here-btn" class="pro-btns pro-buy-btn deliver-here-btn" type="button">deliver here</button>
+									<button id="user-order-clr-btn" class="pro-btns pro-adtocrt-btn deliver-clr-btn" type="button">Clear</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="main-cont2 main-cont5">	
+						<div>
+							<h3>Payment</h3>
+							<div class="sub-cont-2">
+								<p id="payment-arrow-txt" class="hdr_arrow_txt buy_arrow_txt">></p>
+							</div>
+						</div>
+						<div class="sub-cont-1 upro-det pro-about-info sub-cont-4">
+							<div class="pro-opt pro-opt-af">
+								<div class="pro-i-det pro-i-detaf pro-i-detaf-pay">
+									<div>
+										<span>
+											<input type="radio" name="" checked>
+											<p class="pro-name">RazorPay</p>
+										</span>
+										<span id="user-order-email">
+											<p>Orders Updates on </p>
+											<input id="user-order-email-input" type="text" name="book-title-input" placeholder="your email" required>
+										</span>
+										<div class="pro-prices">
+											<button id="payment-continue-btn" class="pro-btns pro-buy-btn deliver-here-btn" type="button">Continue</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="main-cont2 main-cont3">	
+						<div>
+							<h3>Price Details</h3>
+						</div>
+						<div class="sub-cont-1 upro-det pro-about-info sub-cont-5">
+					<!-- 		<div>
+								<p>MRP&nbsp;</p>
+								<span id="order-MRP-output" class="pro-mrp-price">
+								</span>
+							</div> -->
+							<div>
+								<p>Delivery Charges&nbsp;</p>
+								<span id="order-del-chrg-output">Free</span>
+							</div>
+							<div>
+								<p>Total Quantity&nbsp;</p>
+								<span id="order-quantity-output">
+								</span>
+							</div>
+							<div>
+								<p>Total Amount&nbsp;</p>
+								<span id="order-total-output">
+								</span>
+							</div>
+						</div>
+						<div class="sub-cont4"><div>
+						</div></div>
+
+					<div class="sub-cont-5">
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer>
+			<div>
+				<span>
+					<p class="pro-name">Checkout Cart</p>
+				</span>
+				<div>
+					<div>
+						<p class="pro-rel-price pro-rel-priceaf">Total Quantity:</p>
+						<span id="cart-total-quantity"></span>
+					</div>
+					<div>
+						<p class="pro-rel-price pro-rel-priceaf">Total Amount:</p>
+						<span id="cart-total-price"></span>
+					</div>
+				</div>
+				<div>
+					<button id="cart-buy-btn" class="pro-btns pro-adtocrt-btn deliver-clr-btn" type="button">Buy</button>
+				</div>
+			</div>
+		</footer>
+		</div>
+		<script src="js/cart.js"></script>
+		<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	</body>
+</html>

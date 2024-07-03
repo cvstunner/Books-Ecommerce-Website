@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE-11"/>
+		<meta hhtp-equiv="Cache-Controller" content="no-cache"/>
+	<!-- 	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self';"/> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Books | Home</title>
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body id="body">
+		<header class="header-bg">
+			<div class="logo-wrapper">
+				<a href="index.html" class="logo-wrpr">
+					<div class="logo">
+						<div id="logo-upper-body"></div>
+						<div id="logo-lower-body">
+							<!-- <div id="logo-lower-tyre-1"></div> -->
+							<div class="logo-lower-tyre logo-lower-tyre-1"><h1>.</h1></div>
+							<div class="logo-lower-tyre logo-lower-tyre-2"><h1>.</h1></div>
+						</div>
+					</div>
+					<div class="logo-txt-wrpr">
+						<p>Books,</p>
+						<h6>that must Looks</h6>
+					</div>
+				</a>
+			</div>
+			<nav id="nav">
+				<div class="srch-bar">
+					<i class="srch-icon"></i>
+					<input id="hdr-srch-input" type="text" placeholder="Search for books, author and more..." class="black-f"/>
+				</div>
+				<ul>
+					<li>
+						<div id="catg-hdr-btn-wrpr" class="nav-elements-link black-f catg-hdr-btn-wrpr-hover">
+							<p>Categories</p>
+							<p id="catg_arrow_txt" class="hdr_arrow_txt">></p>
+							<div id="catg-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+							<ul id="catg-contxt-menu" class="hdr-contxt-menu">
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a id="sellbks-hdr-txt" class="nav-elements-link black-f"><div id="sellBks-logo-1"></div>Sell Books</a>
+					</li>
+					<li>
+						<a id="hdr-cart-txt" class="nav-elements-link black-f"><div id="cart-logo"></div>Cart</a>
+					</li>
+					<li class="login-hdr-btn-wrpr">
+						<button id="login-hdr-btn" class="nav-elements-link black-f">
+							<p id="login-hdr-btn-txt">Login</p>
+							<p class="hdr_arrow_txt" id="user-arrow-txt">></p>
+							<div id="user-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+							<ul id="user-contxt-menu" class="hdr-contxt-menu">
+								<li><a id='account-hdr-txt'>Account</a></li>
+								<li><a id='wishlist-hdr-txt'>Wishlist</a></li>
+								<li><a id='orders-hdr-txt'="">Orders</a></li>
+								<li><a id="logout-contxt-txt">Log Out</a></li>
+							</ul>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- main -->
+		<main>
+			<section id="ads">
+				<div class="ads-wrapper">
+					<div class="ads-frow">
+						<div class="ads-frow-i1-wrapper">
+							<div class="ads-i ads-frow-i1"></div>
+						</div>
+		<!-- 				<div class="ads-frow-i2-wrapper">
+							<div class="ads-i ads-frow-i2"></div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+
+			<section id="products">
+				<div class="pro-items-wrapper">
+					<!-- <div class="pro-frow">
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i1"></div>
+							</div>
+							<div class="pro-i-det">
+								<p class="pro-ratings">4.5★</p>
+								<div class="pro-name-wrpr"><p class="pro-name">The World Story</p></div>
+								<p class="pro-author">Chetan Shigvan</p>
+								<div class="pro-prices">
+									<p class="pro-mrp-price">₹999</p>
+									<p class="pro-rel-price">₹777</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+					</div>	 -->
+				</div>
+			</section>
+		</main>
+		<div class="login-form-wrpr">
+			<form id="login-form" class="main-cont">	
+				<div id="login-close-wrapper">
+					<button id="login-close-btn" type="button" name="login-close-btn">X</button>
+				</div>
+				<div id="login-txt-wrapper">
+					<button id="signin-txt-btn" type="button" name="signin-txt-btn">SignIn</button>
+					<button id="signup-txt-btn" type="button" name="signup-txt-btn">SignUp</button>
+				</div>
+				<div class="main-cont2">	
+					<div class="sub-cont5">
+							
+						<div class="sub-cont-1">
+							<div class="sub-cont-3">
+								<h2 id="sign-status-txt">Please Login To Continue</h2>
+							</div>			
+							<h2>Username</h2>
+							<input id="user-signin-username" type="text" name="signin-username" placeholder="Enter your username" required autofocus>
+							<hr>
+							<h2>Password</h2>
+							<input id="user-signin-pswd" type="password" name="signin-password" placeholder="Enter your password" required>
+							<hr>
+						</div>
+						<div class="sub-cont4"></div>
+
+					</div>
+					<div class="sub-cont-2">
+						<button id="login-btn" name="signin-btn">SignIn</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script src="js/index.js"></script>
+		<script src="js/query.js" type="module"></script>
+		<script src="js/header.js" type="module"></script>
+		<script src="js/signinup.js"></script>
+	</body>
+</html>

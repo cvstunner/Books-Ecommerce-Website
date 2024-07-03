@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Books | Products </title>
+	<link rel="stylesheet" href="/css/index.css">
+	<link rel="stylesheet" href="/css/header.css">
+	<link rel="stylesheet" href="/css/userProduct.css">
+</head>
+<body>
+	<header class="header-bg">
+		<div class="logo-wrapper">
+			<a href="index.html" class="logo-wrpr">
+				<div class="logo">
+					<div id="logo-upper-body"></div>
+					<div id="logo-lower-body">
+						<!-- <div id="logo-lower-tyre-1"></div> -->
+						<div class="logo-lower-tyre logo-lower-tyre-1"><h1>.</h1></div>
+						<div class="logo-lower-tyre logo-lower-tyre-2"><h1>.</h1></div>
+					</div>
+				</div>
+				<div class="logo-txt-wrpr">
+					<p>Books,</p>
+					<h6>that must Looks</h6>
+				</div>
+			</a>
+		</div>
+		<nav id="nav">
+			<div class="srch-bar">
+				<i class="srch-icon"></i>
+				<input id="hdr-srch-input" type="text" placeholder="Search for books, author and more..." class="black-f"/>
+			</div>
+			<ul>
+				<li>
+					<div id="catg-hdr-btn-wrpr" class="nav-elements-link black-f catg-hdr-btn-wrpr-hover">
+						<p>Categories</p>
+						<p id="catg_arrow_txt" class="hdr_arrow_txt">></p>
+						<div id="catg-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+						<ul id="catg-contxt-menu" class="hdr-contxt-menu">
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a id="sellbks-hdr-txt" class="nav-elements-link black-f"><div id="sellBks-logo-1"></div>Sell Books</a>
+				</li>
+				<li>
+					<a id="hdr-cart-txt" class="nav-elements-link black-f"><div id="cart-logo"></div>Cart</a>
+				</li>
+				<li class="login-hdr-btn-wrpr">
+					<button id="login-hdr-btn" class="nav-elements-link black-f">
+						<p id="login-hdr-btn-txt">Login</p>
+						<p class="hdr_arrow_txt" id="user-arrow-txt">></p>
+						<div id="user-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+						<ul id="user-contxt-menu" class="hdr-contxt-menu">
+							<li><a id='account-hdr-txt'>Account</a></li>
+							<li><a id='wishlist-hdr-txt'>Wishlist</a></li>
+							<li><a id='orders-hdr-txt'="">Orders</a></li>
+							<li><a id="logout-contxt-txt">Log Out</a></li>
+						</ul>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="section-1">
+			<section class="section-1-sub1">
+				<button class="pro-back-btn"><</button>
+				<div class="pro-buy-cont">
+					<div class="pro-i-wrapper">
+						<div class="pro-i pro-frow-i1 pro-i-buy">5.5" x 8.5"</br>size: 500kb</br></div>
+					</div>
+				</div>
+				<div class="pro-buy-opt">
+					<button id="pro-chse-img-wrpr" class="pro-btns">
+						<input id="pro-input-txt" type="text" placeholder="Choose Image" readonly>
+						<label for="pro-chse-img-input">
+							<p>+</p>
+							<input id="pro-chse-img-input" type="file" accept="image/png, image/jpg, image/jpeg"/>
+						</label>
+					</button>
+					<button id="pro-sell-btn" class="pro-btns">Sell</button>
+					<!-- <button class="pro-btns pro-adtocrt-btn">Add to cart</button> -->
+				</div>
+			</section>
+			<section class="section-1-sub2">
+				<div class="Details">
+					<div class="pro-about-title">
+						<h3>Details</h3>
+					</div>
+					<div class="upro-det">
+						<div>
+							<span>
+								<p>Title</p>
+								<input id="book-title-input" type="text" name="book-title-input" placeholder="Enter book title">
+								<hr>
+							</span>
+							<span>
+								<p>Author</p>
+								<input id="book-author-input" type="text" name="book-author-input" placeholder="Enter author name">
+								<hr>
+							</span>
+						</div>
+						<div>
+							<span>
+								<p>Category</p>
+								<select name="" id="book-catg-input">
+									<option >Action</option>
+									<option >Advevture</option>
+									<option >Factual</option>
+									<option >Fiction</option>
+									<option >Horror</option>
+									<option >Joke</option>
+									<option >Life</option>
+									<option >Life Lessons</option>
+									<option >Love</option>
+									<option >Psychology</option>
+									<option >Romance</option>
+									<option >Spiritual</option>
+									<option >Stock Market</option>
+								</select>
+							</span>
+							<span>
+								<p>Quantity</p>
+								<input id="book-quantity-input" type="text" name="book-quantity-input" placeholder="Enter the Quantity" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+								<hr>
+							</span>
+						</div>
+						<div>
+							<span>
+								<p>MRP Price</p>
+								<input id="book-MRP-price-input" type="text" name="book-price-input" placeholder="Enter the MRP price" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" pattern="(1[0-2]|0[1-9])\/(1[5-9]|2\d)"  data-valid-example="05/18"/>
+								<hr>
+							</span>
+							<span>
+								<p>Retail Price</p>
+								<input id="book-retail-price-input" type="text" name="book-price-input" placeholder="Enter the Retail price"  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+								<hr>
+							</span>
+						</div>
+						<p>Description</p>
+						<textarea id="book-dscp-input" type="text" name="book-dscp-input" placeholder="Enter the description" rows="5"></textarea>
+						<!-- <hr> -->
+					</div>
+				</div>
+				<div class="Details">
+					<div class="pro-about-title">
+						<h3>Specifications</h3>
+					</div>
+					<div class="upro-det upro-specs">
+						<div>
+							<div>
+								<p>Pages in Book</p>
+								<input id="book-pages-input" type="text" name="book-title-input" placeholder="Number of pages ">
+								<hr>
+							</div>
+							<span>
+								<p>Pages Colour</p>
+								<fieldset>
+									<input type="radio" data-page-color="coloured" name="pages-colour-input" checked="checked">
+									<p>Coloured</p>
+									<input type="radio" data-page-color="mono" name="pages-colour-input">
+									<p>Mono</p>
+								</fieldset>
+							</span>
+						</div>
+						<div>
+							<div>
+								<p>Return Policy</p>
+								<fieldset>
+									<input id="ret-policy-yes-input" type="radio" name="ret-policy-imput" checked="checked">
+									<p>Yes</p>
+									<input id="ret-policy-no-input" type="radio" name="ret-policy-imput">
+									<p>No</p>
+									<select name="" id="ret-policy-days-input">
+										<option value="">7 days</option>
+										<option value="">15 days</option>
+										<option value="">30 days</option>
+									</select>
+								</fieldset>
+							</div>
+							<span>
+								<p>Country of Origin</p>
+								<select name="" id="country-of-origin-input">
+									<option value="">India</option>
+									<option value="">Bhutan</option>
+									<option value="">Korea</option>
+									<option value="">America</option>
+									<option value="">Russia</option>
+									<option value="">Germany</option>
+									<option value="">France</option>
+									<option value="">Poland</option>
+									<option value="">Scotland</option>
+									<option value="">Qatar</option>
+									<option value="">Finland</option>
+									<option value="">Australia</option>
+									<option value="">Austria</option>
+									<option value="">Armenia</option>
+									<option value="">Myanmar</option>
+									<option value="">Nepal</option>
+									<option value="">Bangladesh</option>
+									<option value="">Srilanka</option>
+									<option value="">Japan</option>
+									<option value="">Egypt</option>
+									<option value="">Africa</option>
+									<option value="">Saudi Arabia</option>
+								</select>
+							</span>
+						</div>
+				<!-- 		<input id="book-quantity-input" type="text" name="book-quantity-input" placeholder="Enter the Quantity">
+						<hr> -->
+						<!-- 
+						<p>MRP Price</p>
+						<input id="book-price-input" type="text" name="book-price-input" placeholder="Enter the MRP price">
+						<hr>
+						<p>Retail Price</p>
+						<input id="book-price-input" type="text" name="book-price-input" placeholder="Enter the Retail price">
+						<hr>
+						<p>Description</p>
+						<input id="book-dscp-input" type="text" name="book-dscp-input" placeholder="Enter the description">
+						<hr> -->
+					</div>
+				</div>
+				<div class="pro-about ">
+					<div class="pro-about-title">
+						<h3>Seller Details</h3>
+					</div>  
+					<div class="upro-det pro-about-info ">
+						<div>
+							<span>
+								<p>Company Name</p>
+								<input id="seller-name-input" type="text" name="book-title-input" placeholder="Enter your Name" oninput="this.value = this.value.replace(/[^a-z, ^A-Z]/g, '').replace(/(\..*)\./g, '$1');" required>
+								<hr>
+							</span>
+							<span>
+								<p>Contact</p>
+								<input id="seller-contact-input" type="text" name="book-author-input" placeholder="Enter your Contact" oninput="this.value = this.value.replace(/[^0-9]+/g, '').replace(/(\..*)\./g, '$1');" required>
+								<hr>
+							</span>
+						</div>
+						<div>
+							<div>
+								<p>Id Proof</p>
+								<select name="" id="seller-idproof-input">
+									<option value="">Aadhar Card</option>
+									<option value="">Pan Card</option>
+									<option value="">Passport</option>
+									<option value="">other</option>
+								</select>
+							</div>
+							<span>
+								<p>Id Number</p>
+								<input id="seller-idnumber-input" type="text" name="book-price-input" placeholder="Enter Id Number" required>
+								<hr>
+							</span>
+						</div>
+						<p>Email</p>
+						<input id="seller-email-input" type="text" name="book-catg-input" placeholder="Enter your Email" required>
+						<hr>
+						<p>Address</p>
+						<textarea id="seller-address-input" type="text" name="book-dscp-input" placeholder="Enter the Address"  rows="5"></textarea>
+					</div>
+				</div>
+			</section>
+		</section>
+	</main>
+	<!-- <script src="js/signinup.js"></script> -->
+	<!-- <script src="js/index.js"></script> -->
+	<script src="js/header.js"></script>
+	<script src="js/products.js"></script>
+</body>
+</html>

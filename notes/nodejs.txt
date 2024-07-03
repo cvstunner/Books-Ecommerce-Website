@@ -1,0 +1,201 @@
+1) NodeJS
+	1. open source server environment, free.
+	2. allows to run JS on server.
+	3. its server side lang.
+	4. powerful JS based platform built on GChrome JS V8 Engine.
+	5. data intensive real time web app like video stream, single page.
+	6. Ryan Dahl in 2009.
+
+Features:
+	1. Asynchronous and Event Driven 
+	2. Single Threaded but Highly Scalables
+	3. Very Fast
+	4. Buffering
+	5. License - MIT license
+
+
+2) Dependencies of NodeJS
+	1. Production Dependencies
+	2. Development Dependencies
+	3. Peer Dependencies
+	4. Optional Dependencies
+	5. Bundled Dependencies
+
+	1. Production Dependencies: fundamental dependencies, Package.json key “dependencies”, node_modules dir, auto add node_mods.
+
+	2. Development Dependencies: req by devpr during devpt
+	e.g. Nodemon, lodash, Babel.
+
+	3. Peer Dependencies: tell devlp which exact ver of lib is req to use the package(lib), e.g. foe react pagkage react-dom
+
+	4. optional Dependencies: dont cause failure dur installation of Dependencies for app/pro
+	e.g. npm i package_name --save-optional
+
+	5. Bundled Dependencies: when published pckg, Dependencies bundled with it
+	e.g. express, request packages can be bundled. 
+
+
+3) Asyn Progm
+	1. used when long running task in bg //with other tasks
+	2. diffc to write & debug
+	3. thus promises use over callbacks
+
+	Two main methods to handle asynchronous tasks – 1) Callback and 2) Promise. 
+	1) callbacks
+		1. may or may not performed asyn
+
+	2) promises
+		1. object which takes a callback and executes it async
+		2. callback(resolve, reject)
+
+		var promise = new Promise(function(resolve, reject) {
+		  if (condition) { 
+		    resolve("Resolved!");
+		  }
+		  else {
+		    reject(Error("Rejected!"));
+		  }
+		});
+
+		promise.then(function(result) {
+		  console.log(result);
+		}, function(err) {
+		  console.log(err); 
+		});
+
+
+
+4) File System
+	1. work with fs on computer.
+	2. var fs = require('fs'); 
+	3. fs methods 	
+	    a. Read file 
+	    	1. fs.readFile() & fs.readFileSync()
+	    b. Create 
+			1) fs.appendFile() - file created if not exists
+			2) fs.open(path, flag, callback)/fs.close(fd,callback) - 2nd arg a flag (w, r), for w not exists empty file created
+			3) fs.writeFile() - if exits, replaced. Not, create new
+	    c. Update 
+	    	1) fs.appendFile()
+	    	2) fs.writeFile()
+	    d. Delete 
+	    	1) fs.unlink()
+	    e. Rename 
+	    	1) fs.rename()
+	    d. File Info - fs.stat(path, callback)
+	    f. Writec a File - fs.writeFile(filename, data[, options], callback)
+	    g. fs.mkdir(path[, mode], callback)j
+	    h. fs.readdir(path, callback)
+	    i. fs.rmdir(path, callback)
+
+	    e.g.
+
+	    // dir C:\Users\Your Name>demofile1.html
+
+	    var http = require('http');
+		var fs = require('fs');
+		http.createServer(function (req, res) {
+		  fs.readFile('demofile1.html', function(err, data) {
+		    res.writeHead(200, {'Content-Type': 'text/html'});
+		    res.write(data);
+		    return res.end();
+		  });
+		}).listen(8080); 
+
+
+
+REST API (Representational State transfer, Application Program Interface)
+
+
+
+
+REPL 
+Read Evaluate Print Loop
+
+
+Steps to install express:
+1. first download nodejs from its official website.
+2. Install nodejs into your system
+3. set path variable of nodejs
+4. install & update npm (node package manager)
+5. to install express, npm install express in cmd prompt
+6. to see if its installed or not, check in package.json file in project or check, npm -version express
+7. to use express in your project, 
+const express = require('express');
+const app = express(); //Instance of Express
+
+
+app.method(route, handler);
+router.method(route, handler);
+
+route: /user/username
+handler - file,function
+
+
+Web Module
+
+1. new node module designed for building web applications. 
+2. intended to replace the built-in http module as well as middle-ware systems like connect and stack.
+3. creator of the connect/stack interface built this
+4. built-in http module in node itself has gotten bloated and complex 
+
+The Old Interface:
+1. In old node interface as exposed by the http module
+2. you create an HTTP server and pass it an HTTP request handler function.
+
+const http = require("http");
+
+http.createServer(function (req, res) {
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end("Hello World!");
+},
+	console.log('Server is listening!')
+).listen(8080);
+
+
+The New Way:
+1. instead of response object that's both response stream and object full of random methods, there is a respond function that accepts status code, headers, and body.
+2. it's not bound to the net module 
+3. now, parsing HTTP and listening on a real network socket should be two different responsibilities
+
+const net = require("net");
+const web = require("web");
+
+var app = function (request, respond){
+	requsst.method
+	requsst.url
+	requsst.headers
+	requsst.body
+	respont(code, headers, body)
+}
+
+var handler = web.socketHandler(app);
+net.createServer(handler).listen(8080);
+
+// app.post('/signup', function(req, res){
+//    if(!req.body.username || !req.body.password){
+//       res.status("400");
+//       res.send("Invalid details!");
+//    } else {
+//       database.filter(function(user){
+//          if(user.username === req.body.username && user.password === req.body.password){
+//             res.send("User Already Exists!");
+//       		req.session.user = {id: req.body.username, password: req.body.password};
+//          }
+//          else{
+// 	        database.push({username: req.body.username, password: req.body.password});
+//             res.send("Signup Successfully!");
+//          }
+//       });
+//    }
+// });
+
+
+// C - POST
+// R - GET
+// U - PATCH/PUT
+// D - DELETE
+
+
+
+// app.use("/fs", require('./routes.js'));

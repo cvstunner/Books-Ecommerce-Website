@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Books | Wishlist</title>
+		<link rel="stylesheet" href="css/fonts.css">
+		<!-- <link rel="stylesheet" href="css/index.css" />	 -->
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/cart.css">
+		<link rel="stylesheet" href="css/buy.css">
+		<link rel="stylesheet" href="css/orders.css">
+	</head>
+	<body id="body">
+		<header class="header-bg">
+			<div class="logo-wrapper">
+				<a href="index.html" class="logo-wrpr">
+					<div class="logo"></div>
+					<div class="logo-txt-wrpr">
+						<p>Books,</p>
+						<h6>that must Looks</h6>
+					</div>
+				</a>
+			</div>
+			<nav id="nav">
+				<div class="srch-bar">
+					<i class="srch-icon"></i>
+					<input id="hdr-srch-input" type="text" placeholder="Search for books, author and more..." class="black-f"/>
+				</div>
+				<ul>
+					<li>
+						<div id="catg-hdr-btn-wrpr" class="nav-elements-link black-f catg-hdr-btn-wrpr-hover">
+							<p>Categories</p>
+							<p id="catg_arrow_txt" class="hdr_arrow_txt">></p>
+							<div id="catg-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+							<ul id="catg-contxt-menu" class="hdr-contxt-menu">
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a id="sellbks-hdr-txt" class="nav-elements-link black-f">Sell Books</a>
+					</li>
+					<li>
+						<a id="hdr-cart-txt" class="nav-elements-link black-f">Cart</a>
+					</li>
+					<li class="login-hdr-btn-wrpr">
+						<button id="login-hdr-btn" class="nav-elements-link black-f">
+							<p id="login-hdr-btn-txt">Login</p>
+							<p class="hdr_arrow_txt" id="user-arrow-txt">></p>
+							<div id="user-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+							<ul id="user-contxt-menu" class="hdr-contxt-menu">
+								<!-- <li><a href="">Account</a></li> -->
+								<li><a href="">Wishlist</a></li>
+								<li><a href="">Orders</a></li>
+								<li><a id="logout-contxt-txt">Log Out</a></li>
+							</ul>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="products">
+				<div class="pro-items-wrapper">
+					<div class="pro-frow">
+						<!-- <div class="pro-wrpr">
+							<div class="pro-buy-cont pro-buy-cont-af">
+								<div class="pro-i-wrapper pro-i-wrapperaf">
+									<div class="pro-i pro-frow-i1 pro-i-buy" style="background-image: url('userData/images/WhatsApp Image 2022-11-04 at 09.54.26.jpg')"></div>
+								</div>
+							</div>
+							<div class="pro-opt pro-opt-af">
+								<div class="pro-i-det pro-i-detaf">
+									<div>
+										<p class="pro-name">The Power of Now</p>
+										<p class="pro-author">Eckkhart Tolle</p>
+										<p class="pro-author">cvstunner PVT LTD</p>
+										<div class="pro-prices">
+											<p class="pro-mrp-price">700</p>
+											<p class="pro-rel-price pro-rel-priceaf">500</p>
+											<button id="order-sub-quantity-btn" class="pro-btns pro-btnsaf pro-adtocrt-btn quantity-btns" type="button" onclick="order_sub_quantity_btn_clicked(this)" style="opacity:0 !important;">-</button>
+											<p id="order-quantity-txt" class="pro-avail-txt pro-avail-txtaf" style="opacity:0 !important;">1</p>
+											<button id="order-add-quantity-btn" class="pro-btns pro-btnsaf pro-adtocrt-btn quantity-btns" type="button" onclick="order_add_quantity_btn_clicked(this)" style="opacity:0 !important;">+</button>
+											<button id="cart-pro-rmv-btn" class="pro-btns pro-adtocrt-btn deliver-clr-btn" type="button" onclick="cart_pro_rmv_btn_clicked(this)" style="opacity:0 !important;">Remove</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+						
+						
+					</div>
+							
+				</div>
+			</section>
+		</main>
+		<script src="js/orders.js"></script>
+	</body>
+</html>

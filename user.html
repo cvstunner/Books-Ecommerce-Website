@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE-11"/>
+	<meta hhtp-equiv="Cache-Controller" content="no-cache"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Books | Account</title>
+	<link rel="stylesheet" href="css/fonts.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+	<link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/user.css"/>
+</head>
+<body>
+	<header class="header-bg">
+		<div class="logo-wrapper">
+			<a href="index.html" class="logo-wrpr">
+				<div class="logo">
+					<div id="logo-upper-body"></div>
+					<div id="logo-lower-body">
+						<!-- <div id="logo-lower-tyre-1"></div> -->
+						<div class="logo-lower-tyre logo-lower-tyre-1"><h1>.</h1></div>
+						<div class="logo-lower-tyre logo-lower-tyre-2"><h1>.</h1></div>
+					</div>
+				</div>
+				<div class="logo-txt-wrpr">
+					<p>Books,</p>
+					<h6>that must Looks</h6>
+				</div>
+			</a>
+		</div>
+		<nav id="nav">
+			<div class="srch-bar">
+				<i class="srch-icon"></i>
+				<input id="hdr-srch-input" type="text" placeholder="Search for books, author and more..." class="black-f"/>
+			</div>
+			<ul>
+				<li>
+					<div id="catg-hdr-btn-wrpr" class="nav-elements-link black-f catg-hdr-btn-wrpr-hover">
+						<p>Categories</p>
+						<p id="catg_arrow_txt" class="hdr_arrow_txt">></p>
+						<div id="catg-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+						<ul id="catg-contxt-menu" class="hdr-contxt-menu">
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a id="sellbks-hdr-txt" class="nav-elements-link black-f"><div id="sellBks-logo-1"></div>Sell Books</a>
+				</li>
+				<li>
+					<a id="hdr-cart-txt" class="nav-elements-link black-f"><div id="cart-logo"></div>Cart</a>
+				</li>
+				<li class="login-hdr-btn-wrpr">
+					<button id="login-hdr-btn" class="nav-elements-link black-f">
+						<p id="login-hdr-btn-txt">Login</p>
+						<p class="hdr_arrow_txt" id="user-arrow-txt">></p>
+						<div id="user-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+						<ul id="user-contxt-menu" class="hdr-contxt-menu">
+							<li><a id='account-hdr-txt'>Account</a></li>
+							<li><a id='wishlist-hdr-txt'>Wishlist</a></li>
+							<li><a id='orders-hdr-txt'="">Orders</a></li>
+							<li><a id="logout-contxt-txt">Log Out</a></li>
+						</ul>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	
+	<main>
+		<section id="section-1">
+			<div class="acc-det">
+				<div>
+					<div class="acc-pic-wrpr">
+						<div class="acc-pic-sub-wrpr">
+							<div id="acc-pic"></div>
+						</div>
+						<label class="acc-pic-input-wrpr" for="acc-pic-input">+	
+							<input id="acc-pic-input" type="file" accept="image/png, image/jpg, image/jpeg"/>
+						</label>
+					</div>
+					<div class="user-name-det">
+						<p id="username-det-txt"></p>
+					</div>
+				</div>
+			</div>
+			<div class="acc-det-info-wrpr">
+				<div class="acc-det-info">
+					<div class="acc-det-info-sl">
+						<div>
+							<div>
+								<h2>Name</h2>
+								<input id="user-signup-name" type="text" name="signup-name" placeholder="Enter your name">
+								<hr>
+							</div>
+							<div>
+								<h2>Age</h2>
+								<input id="user-signup-age" type="text" name="signup-age" placeholder="Enter your age">
+								<hr>
+							</div>
+							<div>
+								<h2>Gender</h2>
+								<select name="" id="user-signup-gender">
+									<option >Male</option>
+									<option >Female</option>
+									<option >Others</option>
+								</select>
+								<hr>
+							</div>
+							<div>
+								<h2>Contact</h2>
+								<input id="user-signup-contact" type="text" name="signup-contact" placeholder="Enter your contact">
+							<hr>
+							</div>
+							<div>
+								<h2>Email</h2>
+								<input id="user-signup-email" type="text" name="signup-email" placeholder="Enter your email">
+								<hr>
+							</div>
+							<div>
+								<h2>Username</h2>
+								<input id="user-signup-username" type="username" name="signup-username" placeholder="Enter your username">
+							<hr>
+							</div>
+							<div>
+								<h2>Password</h2>
+								<input id="user-signup-pswd" type="password" name="signup-password" placeholder="Enter your password">
+							<hr>
+							</div>
+							<div>
+								<button id="save-btn">save</button>
+							</div>
+							<div>
+						<!-- 		<h2>Confirm Password</h2>
+								<input id="user-signup-cnfpswd" type="password" name="signup-cnfpswd" placeholder="Enter password again">
+							<hr> -->
+							</div>
+						</div>
+					</div>
+					<div class="acc-det-info-sr">
+						<div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="js/query.js" type="module"></script>
+	<script src="js/header.js"></script>
+	<script src="js/user.js" type="module"></script>
+</body>
+</html>

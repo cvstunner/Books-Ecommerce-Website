@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE-11"/>
+		<meta hhtp-equiv="Cache-Controller" content="no-cache"/>
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self';"/> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Books | Home</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+	<body id="body">
+		<header class="header-bg">
+			<div class="logo-wrapper">
+				<a href="index.html" class="logo-wrpr">
+					<div class="logo"></div>
+					<div class="logo-txt-wrpr">
+						<p>Books,</p>
+						<h6>that must Looks</h6>
+					</div>
+				</a>
+			</div>
+			<nav id="nav">
+				<div class="srch-bar">
+					<i class="srch-icon"></i>
+					<input id="hdr-srch-input" type="text" placeholder="Search for books, author and more..." class="black-f"/>
+				</div>
+				<ul>
+					<li>
+						<div id="catg-hdr-btn-wrpr" class="nav-elements-link black-f catg-hdr-btn-wrpr-hover">
+							<p>Categories</p>
+							<p id="catg_arrow_txt" class="hdr_arrow_txt">></p>
+							<div id="catg-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+							<ul id="catg-contxt-menu" class="hdr-contxt-menu">
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a id="sellbks-hdr-txt" class="nav-elements-link black-f">Sell Books</a>
+					</li>
+					<li>
+						<a href="about.html" class="nav-elements-link black-f">Cart</a>
+					</li>
+					<li class="login-hdr-btn-wrpr">
+						<button id="login-hdr-btn" class="nav-elements-link black-f">
+							<p id="login-hdr-btn-txt">Login</p>
+							<p class="hdr_arrow_txt" id="user-arrow-txt">></p>
+							<div id="user-contxt-menu-wrpr" class="contxt-menu-wrpr"></div>
+							<ul id="user-contxt-menu" class="hdr-contxt-menu">
+								<li><a href="">Account</a></li>
+								<li><a href="">Wishlist</a></li>
+								<li><a href="">Orders</a></li>
+								<li><a id="logout-contxt-txt">Log Out</a></li>
+							</ul>
+						</button>
+						<!-- <a id="user-hdr-txt" class="nav-elements-link black-f">User</a> -->
+					</li>
+					
+					<!-- <button id="login-hdr-btn" class="nav-elements-link black-f">Login</button> -->
+
+					<!-- <li>
+						<div id="acc-logo" class="nav-elements-link">
+							<div class="acc-logo-wrapper"></div>
+							<ul id="acc-contxt-menu">
+								<li id="drpmenu-acc-txt">
+									<a href="" class="red-cntxt">User</a>
+									<ul id="acc-contxt-sub-menu">
+										<li>
+											<a href="wishlist.html" class="red-cntxt">Wishlist</a>
+										</li>
+										<li>
+											<a href="cart.html" class="red-cntxt">Cart</a>
+										</li>
+										<li>
+											<a href="orders.html" class="red-cntxt">Orders</a>
+										</li>
+										<li>
+											<a href="userProducts.html" class="red-cntxt">Products</a>
+										</li>
+									</ul> 
+								</li>
+								<li>
+									<a href="login.html" id="login-signin-nav" class="red-cntxt">Login | Signin</a>
+								</li>
+								<li><a href="" class="red-cntxt">Log Out</a></li>
+							</ul>
+						</div>
+					</li> -->
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="ads">
+
+				<div class="ads-wrapper">
+					<div class="ads-frow">
+						<div class="ads-frow-i1-wrapper">
+							<div class="ads-i ads-frow-i1"></div>
+						</div>
+						<div class="ads-frow-i2-wrapper">
+							<div class="ads-i ads-frow-i2"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="products">
+				<div class="pro-items-wrapper">
+					<!-- <div class="pro-frow"> -->
+						<!-- <div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i1"></div>
+							</div>
+							<div class="pro-i-det">
+								<p class="pro-ratings">4.5★</p>
+								<p class="pro-name">Peace Of Mind</p>
+								<p class="pro-author">Chetan Shigvan</p>
+								<div class="pro-prices">
+									<p class="pro-mrp-price">₹999</p>
+									<p class="pro-rel-price">₹777</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div> -->
+						<!-- 
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i2"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">4.3★</p>
+								<p id="pro-name">Bind Me</p>
+								<p id="pro-author">me&me</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹850</p>
+									<p id="pro-rel-price">₹650</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i3"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">4.7★</p>
+								<p id="pro-name">For Whom?</p>
+								<p id="pro-author">No One</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹900</p>
+									<p id="pro-rel-price">₹799</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i4"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">4.5★</p>
+								<p id="pro-name">Human</p>
+								<p id="pro-author">Poem</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹999</p>
+									<p id="pro-rel-price">₹777</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i5"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">5.0★</p>
+								<p id="pro-name">Aftelife</p>
+								<p id="pro-author">Nobody</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹1299</p>
+									<p id="pro-rel-price">₹999</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i5"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">5.0★</p>
+								<p id="pro-name">Aftelife</p>
+								<p id="pro-author">Nobody</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹1299</p>
+									<p id="pro-rel-price">₹999</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i5"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">5.0★</p>
+								<p id="pro-name">Aftelife</p>
+								<p id="pro-author">Nobody</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹1299</p>
+									<p id="pro-rel-price">₹999</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<button class="pro-scroll-btn">></button>
+					</div>
+
+					<div class="pro-frow">
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i1"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">4.5★</p>
+								<p id="pro-name">Peace Of Mind</p>
+								<p id="pro-author">Chetan Shigvan</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹999</p>
+									<p id="pro-rel-price">₹777</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i2"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">4.3★</p>
+								<p id="pro-name">Bind Me</p>
+								<p id="pro-author">me&me</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹850</p>
+									<p id="pro-rel-price">₹650</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i3"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">4.7★</p>
+								<p id="pro-name">For Whom?</p>
+								<p id="pro-author">No One</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹900</p>
+									<p id="pro-rel-price">₹799</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i4"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">4.5★</p>
+								<p id="pro-name">Human</p>
+								<p id="pro-author">Poem</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹999</p>
+									<p id="pro-rel-price">₹777</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i5"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">5.0★</p>
+								<p id="pro-name">Aftelife</p>
+								<p id="pro-author">Nobody</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹1299</p>
+									<p id="pro-rel-price">₹999</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i5"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">5.0★</p>
+								<p id="pro-name">Aftelife</p>
+								<p id="pro-author">Nobody</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹1299</p>
+									<p id="pro-rel-price">₹999</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<div class="pro-wrpr">
+							<div class="pro-i-wrapper">
+								<div class="pro-i pro-frow-i5"></div>
+							</div>
+							<div class="pro-i-det">
+								<p id="pro-ratings">5.0★</p>
+								<p id="pro-name">Aftelife</p>
+								<p id="pro-author">Nobody</p>
+								<div class="pro-prices">
+									<p id="pro-mrp-price">₹1299</p>
+									<p id="pro-rel-price">₹999</p>
+									<button
+										class="pro-wshlst-btn emt-hrt-icon"
+									></button>
+								</div>
+							</div>
+						</div>
+						<button class="pro-scroll-btn">></button>
+					</div> -->
+				<!-- </div> -->
+			</section>
+
+			<!-- 		<section id="ads">
+			<div class="ads-wrapper">
+				<div class="ads-frow">
+					<div class="ads-frow-i1-wrapper">
+						<div class="ads-i ads-frow-i1"></div>
+					</div>
+					<div class="ads-frow-i2-wrapper">
+						<div class="ads-i ads-frow-i2"></div>
+					</div>
+				</div>
+				<div class="ads-srow">
+					<div class="ads-i ads-srow-i1"></div>
+					<div class="ads-i ads-srow-i2"></div>
+					<div class="ads-i ads-srow-i3"></div>
+					<div class="ads-i ads-srow-i4"></div>
+				</div>
+			</div>
+		</section> -->
+		</main>
+		<div class="login-form-wrpr">
+			<form id="login-form" class="main-cont">	
+				<div id="login-close-wrapper">
+					<button id="login-close-btn" type="button" name="login-close-btn">X</button>
+				</div>
+				<div id="login-txt-wrapper">
+					<button id="signin-txt-btn" type="button" name="signin-txt-btn">SignIn</button>
+					<button id="signup-txt-btn" type="button" name="signup-txt-btn">SignUp</button>
+				</div>
+				<div class="main-cont2">	
+					<div class="sub-cont5">
+							
+						<div class="sub-cont-1">
+							<div class="sub-cont-3">
+								<h2>Please Login To Continue</h2>
+							</div>			
+							<h2>Username</h2>
+							<input id="user-signin-username" type="username" name="signin-username" placeholder="Enter your username">
+							<hr>
+							<h2>Password</h2>
+							<input id="user-signin-pswd" type="password" name="signin-password" placeholder="Enter your password">
+							<hr>
+						</div>
+						<div class="sub-cont4"></div>
+
+					</div>
+					<div class="sub-cont-2">
+						<button id="login-btn" name="signin-btn">SignIn</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script src="js/index.js"></script>
+		<script src="js/signinup.js"></script>
+	</body>
+</html>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti possimus optio qui distinctio quasi reprehenderit est, quas odio exercitationem cupiditate.
+
+Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, veniam, provident ea necessitatibus accusamus, hic repellendus cupiditate possimus delectus porro voluptate voluptates, fugit asperiores maxime itaque? Autem, suscipit laborum nihil neque voluptates ullam sed sapiente inventore omnis? Deleniti explicabo, praesentium quaerat, saepe itaque nobis ad eos sapiente quas similique, tempore quisquam. Modi a ab, numquam eligendi, vel odit voluptate quam sed ratione. Sed magni non, eius, cum corrupti a dolorem!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium consequuntur recusandae, optio veritatis officiis autem odio! Saepe porro at necessitatibus expedita excepturi dicta impedit culpa, ratione harum suscipit consectetur, est doloremque assumenda ea vel non perferendis quisquam neque nam quo aperiam? Quod labore unde natus, qui nostrum possimus quisquam commodi reprehenderit suscipit ipsa minima incidunt officiis? Eos alias atque dolores aliquid qui, ea tenetur impedit quae praesentium vel, consectetur libero molestiae nisi exercitationem id quidem sunt vero asperiores aut omnis expedita sapiente consequuntur animi, similique explicabo? Ad ipsam alias, labore iste perferendis maiores officia similique aliquam iusto dignissimos, facere?

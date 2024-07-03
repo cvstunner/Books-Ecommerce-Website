@@ -1,0 +1,18 @@
+.pro-wrpr {
+	  max-height: calc(20px * 8.3) !important;
+	  min-height: calc(15px * 8.3) !important;
+	  background-color: rgb(242, 240, 240);
+}
+
+.pro-buy-cont-af, .pro-i-wrapperaf, .pro-i-buy {
+	max-height: calc(15px * 8.5) !important;
+	min-height: calc(15px * 8.5) !important;
+	min-width: calc(15px * 5.5) !important;
+	max-width: calc(15px * 5.5) !important;
+	margin-top: 0;
+}
+
+.pro-opt-af {
+	outline: none;
+	box-shadow: none;
+}

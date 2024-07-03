@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Valky Regular';
+    src: local('ValkyRegular'), url('../fonts/ValkyRegular.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNextLTPro Regular';
+    src: local('AvenirNextLTPro-Regular'), url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNextLTPro Medium';
+    src: local('AvenirNextLTPro-Medium'), url('../fonts/AvenirNextLTPro-Medium.otf') format('opentype');
+    font-style: medium;
+}
+@font-face {
+    font-family: 'Orpheus Pro Regular';
+    src: local('Orpheus Pro'), url('../fonts/Orpheus Pro.otf') format('opentype');
+    font-style: Regular;
+}
+@font-face {
+    font-family: 'Garamond Classico Regular';
+    src: local('Orpheus Pro'), url('../fonts/Garamond Classico Regular.otf') format('opentype');
+    font-style: Regular;
+}
+
+@font-face {
+    font-family: 'Acumin Pro Bold';
+    src: local('Acumin Pro Bpld'), url('../fonts/Acumin Pro Bold.otf') format('opentype');
+    font-style: Bold;
+}
+@font-face {
+    font-family: 'Raleway Regular';
+    src: local('Raleway-VariableFont_wght'), url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-style: Regular;
+}
