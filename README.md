@@ -15,3 +15,36 @@ A simple e-commerce platform for buying and managing books, built using **Node.j
 - **MySQL** (Database)
 - **Bootstrap** (Frontend)
 - **JavaScript** (Dynamic content)
+
+## Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd books
+   ```
+
+2. Install dependencies with npm:
+
+   ```bash
+   npm install
+   ```
+
+3. Configure database settings in `config.js` and import the schema.
+
+4. Run the app:
+
+   ```bash
+   npm start
+   ```
+
+Access at `http://localhost:3000`.
+
+## License
+
+MIT License
+
+---
+
+This is a brief README for your "Books" project, highlighting key features and setup instructions.
